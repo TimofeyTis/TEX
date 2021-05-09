@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.5)  9 MAY 2021 18:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.5)  9 MAY 2021 19:09
 entering extended mode
 **d:/documents/ТОМСК/first.tex
 (d:/documents/ТОМСК/first.tex
@@ -356,7 +356,7 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layoutvoffset=\dimen158
 \Gm@dimlist=\toks23
  (C:\Users\TimofeyT\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-LaTeX Font Info:    Trying to load font information for T2A+faq on input line 26.
+LaTeX Font Info:    Trying to load font information for T2A+faq on input line 27.
  (C:\Users\TimofeyT\AppData\Local\Programs\MiKTeX\tex/latex/pscyr\t2afaq.fd
 File: t2afaq.fd 2004/09/23 Fontinst v1.914 font definitions for T2A/faq.
 ) (C:\Users\TimofeyT\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
@@ -366,23 +366,23 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 ) (first.aux)
 \openout1 = `first.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Info: Redefining \th on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Info: Redefining \th on input line 27.
  (C:\Users\TimofeyT\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count271
@@ -437,22 +437,22 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
 (C:\Users\TimofeyT\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
  (C:\Users\TimofeyT\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c@Def=\count277
 \c@Ex=\count278
 LaTeX Font Info:    Font shape `T2A/faq/b/n' in size <14.4> not available
-(Font)              Font shape `T2A/faq/bx/n' tried instead on input line 40.
+(Font)              Font shape `T2A/faq/bx/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `T2A/faq/b/n' in size <10> not available
-(Font)              Font shape `T2A/faq/bx/n' tried instead on input line 42.
+(Font)              Font shape `T2A/faq/bx/n' tried instead on input line 43.
 LaTeX Font Info:    Font shape `T2A/faq/b/it' in size <10> not available
-(Font)              Font shape `T2A/faq/bx/it' tried instead on input line 43.
+(Font)              Font shape `T2A/faq/bx/it' tried instead on input line 44.
  [1
 
 {C:/Users/TimofeyT/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3] (first.aux
@@ -461,10 +461,10 @@ LaTeX Font Info:    Trying to load font information for OT1+faq on input line 5.
 File: ot1faq.fd 2001/12/09 Fontinst v1.914 font definitions for OT1/faq.
 )) ) 
 Here is how much of TeX's memory you used:
- 4542 strings out of 481019
- 60141 string characters out of 2903868
- 378097 words of memory out of 3000000
- 21715 multiletter control sequences out of 15000+600000
+ 4544 strings out of 481019
+ 60155 string characters out of 2903868
+ 378113 words of memory out of 3000000
+ 21717 multiletter control sequences out of 15000+600000
  423211 words of font info for 63 fonts, out of 8000000 for 9000
  198 hyphenation exceptions out of 8191
  68i,16n,74p,507b,219s stack positions out of 5000i,500n,10000p,200000b,80000s

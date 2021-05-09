@@ -11,6 +11,7 @@
 \usepackage{graphicx}           %                              для картинок
 \usepackage{amsmath}
 \usepackage{amssymb}
+
 \usepackage[left=2cm,right=2cm, top=2cm,bottom=2cm,bindingoffset=0.2cm]{geometry}
 
 
@@ -97,13 +98,13 @@
 	
 	
 	$V^*(s)$ --- функция суммарных внешних доходов от оптимальной политики в состоянии s
-    \begin{equation}
+    \begin{equation}\label{VAL}
 	    V^*(s)  = 
         \max_{a(\cdot )} \sum_{t =0 }^{\infty} \gamma ^t r(s_t, a_t).
     \end{equation}
 	{sdfxv}
     Исходя из описания задачи уравнение Вальда - Беллмана ~\cite{LEC} для управляемого марковского процесса с конечным числом действий и состояний имеет вид:
-	\begin{equation}
+	\begin{equation}\label{BELLMAN}
 	    V^*(s)  = 
         \max_{a\in A} \left\{ \sum_{s'\in S} p(s, a; s') (r(s, a; s') +  \gamma V^* (s') )\right\} =\\
         \max_{a \in \{a_0,a_1\}} \left\{ \sum_{s'\in \{s_0, s_1\}} p(s, a; s') (r(s, a; s') +  \gamma V^* (s') )\right\}
