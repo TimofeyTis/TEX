@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1620559610 "d:/documents/“ŒÃ— /first.tex" "first.pdf" "first" 1620559640
+["pdflatex"] 1620559610 "d:/documents/“ŒÃ— /first.tex" "first.pdf" "first" 1620560256
   "C:/Users/TimofeyT/AppData/Local/MiKTeX/fonts/tfm/lh/lh-t2a/larm1000.tfm" 1618115449 3220 0e417eaf233b160335902e97259a6c77 ""
   "C:/Users/TimofeyT/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1620219905 6454883 6f0fe0a7db858c881e1379478a417d5b ""
   "C:/Users/TimofeyT/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1620544819 93348 48709b78ebfc66f37a16739b14f4c203 ""
@@ -80,10 +80,10 @@
   "C:/Users/TimofeyT/AppData/Local/Programs/MiKTeX/tex/latex/pscyr/ot1faq.fd" 1007920086 758 0789fd92c27f21377e4d7de6d7d74e03 ""
   "C:/Users/TimofeyT/AppData/Local/Programs/MiKTeX/tex/latex/pscyr/pscyr.sty" 1025781870 4889 99cbcc393edd09ecbd2ccf6d7a837310 ""
   "C:/Users/TimofeyT/AppData/Local/Programs/MiKTeX/tex/latex/pscyr/t2afaq.fd" 1095959622 809 ee331d1fd000d83e206c1e9c1dea2c91 ""
-  "d:/documents/“ŒÃ— /first.tex" 1620559639 13637 ce5b28c6d9bda401423769b1eda0b21d ""
+  "d:/documents/“ŒÃ— /first.tex" 1620560256 13637 ce5b28c6d9bda401423769b1eda0b21d ""
   "first.aux" 1620559612 695 5bdaa845cb2888a6e76b26cef832052f "pdflatex"
-  "first.tex" 1620559639 13637 ce5b28c6d9bda401423769b1eda0b21d ""
+  "first.tex" 1620560256 13637 ce5b28c6d9bda401423769b1eda0b21d ""
   (generated)
   "first.pdf"
-  "first.log"
   "first.aux"
+  "first.log"
