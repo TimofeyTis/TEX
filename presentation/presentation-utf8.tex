@@ -1,0 +1,418 @@
+\documentclass[pdf, 12pt, aspectratio=169, bigger, unicode]{beamer}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english,russian]{babel}
+\usepackage{pscyr}
+
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{graphpap}
+\usepackage{ragged2e}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{pgf}
+\usepackage{pgfplots}
+\usepackage{multicol}
+\usepackage{slashbox}
+\usepackage{tabularx}
+\usepackage{bibunits}
+\usepackage{epstopdf}
+\usepackage{algorithmicx}
+
+ 
+\usepackage{float}
+\usepackage[ruled]{algorithm}
+\usepackage{algpseudocode}
+
+
+
+\usefonttheme[onlymath]{serif}
+\usetikzlibrary{decorations}
+%Нужно включать, если используется "тема" (стиль оформления) по умолчанию
+\usepackage{beamerthemesplit}
+\usetheme{Warsaw}
+
+
+\usecolortheme{seahorse}
+
+
+%\captionsetup[ruled]{labelsep=period}
+
+\renewcommand{\thealgorithm}{\arabic{algorithm}}
+\floatname{algorithm}{Алгоритм}
+\algrenewcommand\algorithmicrequire{\textbf{Вход: }}
+\algrenewcommand\algorithmicensure{\textbf{Выход: }}
+\algrenewcommand\algorithmicwhile{\textbf{До тех пока}}
+	\algrenewcommand\algorithmicdo{\textbf{выполнять}}
+	\algrenewcommand\algorithmicrepeat{\textbf{Повторять}}
+	\algrenewcommand\algorithmicuntil{\textbf{Пока выполняется}}
+	\algrenewcommand\algorithmicend{\textbf{Конец}}
+	\algrenewcommand\algorithmicif{\textbf{Если}}
+	\algrenewcommand\algorithmicelse{\textbf{иначе}}
+	\algrenewcommand\algorithmicthen{\textbf{тогда}}
+	\algrenewcommand\algorithmicfor{\textbf{Для}}
+	\algrenewcommand\algorithmicforall{\textbf{Выполнить для всех}}
+	\algrenewcommand\algorithmicfunction{\textbf{Функция}}
+	\algrenewcommand\algorithmicprocedure{\textbf{Процедура}}
+	\algrenewcommand\algorithmicloop{\textbf{Зациклить}}
+	\algrenewcommand\algorithmicreturn{\textbf{Возвратить}}
+	\algrenewtext{EndWhile}{\textbf{Конец цикла}}
+	\algrenewtext{EndLoop}{\textbf{Конец зацикливания}}
+	\algrenewtext{EndFor}{\textbf{Конец цикла}}
+	\algrenewtext{EndFunction}{\textbf{Конец функции}}
+	\algrenewtext{EndProcedure}{\textbf{Конец процедуры}}
+	\algrenewtext{EndIf}{\textbf{Конец условия}}
+	\algrenewtext{EndFor}{\textbf{Конец цикла}}
+	\algrenewtext{BeginAlgorithm}{\textbf{Начало алгоритма}}
+	\algrenewtext{EndAlgorithm}{\textbf{Конец алгоритма}}
+	\algrenewtext{BeginBlock}{\textbf{Начало блока. }}
+	\algrenewtext{EndBlock}{\textbf{Конец блока}}
+	\algrenewtext{ElsIf}{\textbf{иначе если }}
+		
+\algloop{description}
+	\algnewcommand\algorithmicdescription{\textbf{Описание алгоритма}}
+
+
+\mode<presentation>
+{
+    \usefonttheme[onlymath]{serif}
+		%\usetheme{Copenhagen}
+        %\usetheme{Warsaw}
+        %\usetheme{Darmstadt}
+        %\usetheme{Frankfurt}
+        %\usetheme{AnnArbor}
+        %\usetheme{CambridgeUS}
+    \setbeamercovered{transparent}	
+	\setbeamertemplate{footline}
+{%
+ \leavevmode%
+    \hbox{%
+        \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm]{author in head/foot}%
+            \usebeamerfont{author in head/foot}%\insertframenumber{}/\inserttotalframenumber%
+                        \hfill\insertshortauthor
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+            \usebeamerfont{title in head/foot}\insertshorttitle
+						\hfill \insertframenumber{}/\inserttotalframenumber%
+        \end{beamercolorbox}}%
+    \vskip0pt%
+}
+\setbeamertemplate{navigation symbols}{} 
+\setbeamertemplate{navigation symbols}{}
+}
+
+\bibliographystyle{unsrt}
+\makeatletter
+\addto\captionsrussian{
+    %\renewcommand{\figurename}{Рисунок}
+    \def\figurename{Рисунок}
+}
+
+
+%Более крупный шрифт для подзаголовков титульного листа
+\setbeamerfont{institute}{size=\normalsize}
+
+%Задание команды (\bluetext) для выделения конкретным (синим) цветом
+%(используйте \alert для выделения цветом выбранной "темы")
+\setbeamercolor{bluetext_color}{fg=blue}
+\newcommand{\bluetext}[1]{{\usebeamercolor[fg]{bluetext_color}#1}}
+
+\renewcommand{\raggedright}{\leftskip=0pt \rightskip=0pt plus 0cm}
+
+\renewcommand{\rmdefault}{ftm}
+
+%Если используется последовательное появление пунктов списков на слайде
+%(не злоупотребляйте в слайдах для защиты дипломной работы), чтобы
+%еще непоявившиеся пункты были все-таки немножко видны.
+\setbeamercovered{transparent}
+
+\title[ЗАДАЧА MARL ДЛЯ СВЕТОФОРА НА ПЕРЕКРЁСТКЕ]{ЗАДАЧА MARL ДЛЯ СВЕТОФОРА НА ПЕРЕКРЁСТКЕ}
+\author[Тисленко Т.И.]{ \bf Тисленко Тимофей Иванович}
+\institute[ИМиФИ СФУ]{	{\footnotesize ФГАОУ ВО <<СИБИРСКИЙ ФЕДЕРАЛЬНЫЙ УНИВЕРСИТЕТ>>\\
+
+    Институт математики  и фундаментальной информатики\\[-2pt]
+		
+	%Кафедра высшей и прикладной математики
+	}
+
+ % \vspace{0.5cm}
+%{\footnotesize Направление \ 01.037.02 Прикладная математика }
+
+  \vspace{0.2cm}
+    {\footnotesize Научный руководитель --- к.ф.-м.н.,  доцент   {\sf Д.В. Семенова }					}
+ }
+\date[\today]{\footnotesize Томск, МПОИТЭС	 2021}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\titlepage
+
+ \end{frame}
+
+\normalsize
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	\frametitle{Актуальность}
+    \justifying
+    В Красноярске стремительно с каждым годом растет кол-во желающих стать автомобилистом.
+    Так, Красноярский край оказался на 12 месте в топ-20 регионов по объему автомобильного парка в России по данным агентства «Автостат» на 1 января 2020.
+    С количеством автомобилистов раздувается и время, которое проводится в пробках.
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \frametitle{Существующие модели адаптивыных систем светофоров}
+    \justifying
+    \begin{figure}[h!]
+		\centering
+            
+			\includegraphics[scale = 0.8]{images/issues.png}
+		    \caption{ }
+            \label{fig:issues}
+	\end{figure}
+
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \frametitle{Цели и задачи}
+    \justifying
+    \begin{block}{Цель работы}
+        \justifying
+        Разработка и исследование математической модели мультиагентной системы для задачи оптимизации движения на перекреске.
+    \end{block}
+
+    %\pause
+
+    \begin{block}{Задачи}
+        \begin{enumerate} \justifying
+            \item Сделать обзор литературы по соответствующей тематике.
+            \item Описать математическую модель.
+            \item Описать алгоритм.
+            \item Продемонстрировать результаты работы алгоритма.
+        \end{enumerate}
+    \end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \justifying
+    \frametitle{Основные определения}
+
+    \begin{block}{Определения:} 
+        \begin{enumerate} \justifying
+            \item	\textbf{Интеллектуальным агентом} называется метаобъект, наделенный долей субъектности,
+            взаимодействующий с другими агентами и средой, выполняющий определенные функции для достижения поставленных целей.
+            \item	\textbf{Средой} называется множество объектов, не принадлежащих агенту.
+            \item 	\textbf{Задачами/ресурсами} называются объекты, распределяемые агентами в ходе достижения целей.
+            \item 	\textbf{Мультиагентная система} – совокупность взаимосвязанных агентов.
+            \item 	\textbf{RL(Reinforcement Learning)} — Обучение с подкреплением, где
+            в роли учителя выступает среда. 
+        \end{enumerate}
+    \end{block}
+					
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\justifying
+\frametitle{Постановка задачи}
+
+	
+	\begin{figure}[h!]
+		\centering
+            
+			\includegraphics[scale = 1.8]{images/intersection2.png}
+            \label{fig:intersection1}
+		    \caption{ }
+	\end{figure}
+
+  
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\justifying
+\frametitle{}
+\begin{block}\justifying
+    \begin{enumerate}[-] \justifying    
+        \item Модель среды – Марковский процесс принятия решения-
+        \item агент --- светофор
+        \item cреда --- перекресток, на котором на отрезках дорог за 100м до стоп-линий засекается время.
+        \item пространство состояний $S = \{$ $s_0$ = <<фаза0>> , $s_1$ = <<фаза1>>  $\}$
+        \item в момент времени $t_k$ активна фаза светофора $S_k$, суммарное засеченое всех машин, 
+        проходящих через отрезок дороги называется задержкой на фазе $S_k$ 
+        \item множество действий A = $\{$ $a_0$ = <<оставить фазу>> , $a_1$ = <<сменить фазу>> $\}$
+    \end{enumerate}
+\end{block}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\justifying
+    \begin{figure}[h!]
+        \centering
+            
+            \includegraphics[scale = 0.6]{images/state-action.png}
+            \label{fig:scheme}
+            \caption{ }
+    \end{figure}
+
+	\begin{block}\justifying
+        \begin{enumerate}[-] \justifying  
+        \item $r(s, a)$ = задержка на фазе $s$ после действия $a$
+        \item $p(i, k; j)$ вероятность того, что система из состояния $i$ при выборе решения $k$ попадает в состояние $j$,
+        полностью определяется состоянием, в которое переходит процесс.
+        \end{enumerate}
+    \end{block}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\justifying
+
+	$V^*(s)$ --- функция суммарных внешних доходов от оптимальной политики в состоянии s
+	\begin{equation}\label{VAL}
+		V^*(s)  = 
+		\max_{a(\cdot )} \sum_{t =0 }^{\infty} \gamma ^t r(s_t, a_t).
+	\end{equation}
+
+
+
+	Уравнение Вальда - Беллмана ~\cite{LEC} для управляемого марковского процесса с конечным числом действий и состояний имеет вид:
+	\begin{equation}\label{BELLMAN}
+		V^*(s)  = 
+		\max_{a\in A} \left\{ \sum_{s'\in S} p(s, a; s') (r(s, a; s') +  \gamma V^* (s') )\right\}.
+	\end{equation}
+
+	Т.е.  
+    \begin{multline*}
+        V^*(S_0) = 
+        max \{
+            p( S_0, A_0;S_1)(r( S_0, A_0) + \gamma V^*(S_1) 
+        + p( S_0, A_0;S_1)(r( S_0, A_0) + \gamma V^*(S_0) ; \\
+        p( S_0, A_1;S_1)(r( S_0, A_1) + \gamma V^*(S_1) 
+        + p( S_0, A_1;S_1)(r( S_0, A_1) + \gamma V^*(S_0) 
+        \}
+    \end{multline*}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\justifying
+    \begin{equation}
+        V^*(s) = \max_{a\in A}  Q(s, a) = \max_{a\in A}  Q_t(s, a).
+    \end{equation}
+
+	\begin{equation}
+		Q(s, a) = \sum_{s'\in S} p(s, a; s')(r(s, a; s')) +  \gamma V^* (s').
+	\end{equation}
+	
+	Идея Q-обучения заключается в оценке невычислимой правой части:
+	\begin{equation} \label{Qiteration}
+        Q_{t+1}(s, a) =  Q_t(s, a) + \alpha _t (s, a) \left(r(s, a) +  \gamma \max_{a'\in A}  Q_t(s', a') - Q_t(s, a)\right)
+    \end{equation}
+    где $s'$--– положение процесса на шаге $t+1$, если на шаге $t$ процесс был в состоянии $s$ и было выбрано действие $a$. Если на шаге $t$ процесс находился в состоянии $s$ и было выбрано действие a, то $0 \leq \alpha _t(s, a) \leq 1$, иначе $\alpha _t(s, a) = 0$.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Сходимость}
+\justifying
+	$Q = \{ Q(s, a)\}_{s \in S, a' \in A}$ , можно записать итеративно $Q_{t+1} = A(Q_t)$, где $A \colon \mathbb{R} _{\infty}^1 \to  \mathbb{R} _{\infty}^1$ --- сжимающее отображение.
+
+    \begin{multline*}
+    \rho ((A \circ Q_1)(s, a), (A \circ Q_2)(s, a)) % = \\
+     %   = \max_{a'\in A, s'\in S}| \sum_{s'\in S}  p(s, a; s')(r(s, a) + \gamma \max_{a'\in A}  Q_1(s', a')) - \\
+   %  - \sum_{s'\in S}  p(s, a; s')(r(s, a) + \gamma \max_{a'\in A}  Q_2(s', a'))|  
+    \leq  \max_{a'\in A, s'\in S} |\gamma \max_{a'\in A}  Q_1(s', a')) - \gamma \max_{a'\in A}  Q_2(s', a'))| = \\
+        = 	\gamma \rho (Q_1(s, a), Q_2(s, a)) ,  \gamma \in (0; 1)
+    \end{multline*}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{}
+\justifying
+	Оказывается, что если используемая стратегия $a(\cdot )$ приводит к тому, что с вероятностью 1 каждая пара $(s, a)$ будет бесконечное число раз встречаться на бесконечном горизонте наблюдения, то из отмеченного выше условия сжимаемости при
+    \begin{equation}
+        \sum _{t=0} ^\infty {\alpha _t (s, a)} = \infty, 
+        \sum _{t=0} ^\infty {\alpha _t (s, a)^2} \leq \infty
+    \end{equation}
+    удет следовать сходимость (с вероятностью 1)  процесса \ref{Qiteration}
+
+    \begin{equation}
+	    V ^*(s) = \max_{a\in A}  \lim _{t \to + \infty}Q_t(s, a).
+    \end{equation}
+    \begin{equation}
+	    a_t(s) = \arg  \max_{a' \in A} Q_t(s, a')
+    \end{equation}	
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Основные результаты работы}
+\justifying
+Целью работы являлось ознакомление с подходами, позволяющими оптимизировать процесс выбора сигнала светофора, с учетом текущей загрузки транспорта, с точки зрения минимизации задержки. В работе получены следующие результаты:
+
+\begin{enumerate}
+	\item Математическая модель процесса выбора фазы светофора, отличающаяся учетом текущего расположения светофоров и их загрузки и позволяющая сформулировать оптимизационные задачи, целью которых является минимизация задержки трафика автомобилей.
+	\item Структура мультиагентной системы, включающая в себя единственного агента – светофор, обеспечивающая наиболее эффективное распараллеливание всей задачи на подзадачи, которые будут решены агентом.
+\end{enumerate}	
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\begin{thebibliography}{2}
+	\bibitem{LEC}
+		Лекции по случайным процессам : учебное пособие /
+		А. В. Гасников, Э. А. Горбунов, С. А. Гуз и др. ; под ред.
+		А. В. Гасникова. – <<Москва>> : МФТИ, 2019. – 285 с.
+		ISBN 978-5-7417-0710-4
+	\bibitem{BOOK}
+		Марковские процессы принятия решений. /
+		Майн X., Осаки С. 
+		Главная редакция физико-математической литературы издательства «Наука», 
+		1977.  - 176 с. 
+		УДК 519.283
+	%
+\end{thebibliography}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+\begin{frame}
+\begin{center}
+
+{\color{blue}{\Huge{\bf СПАСИБО ЗА ВНИМАНИЕ!!!}}}
+\end{center}
+\end{frame}
+
+
+
+\end{document}
+
